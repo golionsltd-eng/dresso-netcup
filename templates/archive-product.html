@@ -1,0 +1,36 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"section","style":{"color":{"background":"#0b5d59"},"spacing":{"padding":{"top":"48px","bottom":"42px","left":"20px","right":"20px"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<section class="wp-block-group" style="background-color:#0b5d59;margin-top:0;margin-bottom:0;padding-top:48px;padding-right:20px;padding-bottom:42px;padding-left:20px"><!-- wp:query-title {"type":"archive","textAlign":"center","showPrefix":false,"align":"wide","style":{"color":{"text":"#d4af37"},"typography":{"fontSize":"38px","fontWeight":"600","letterSpacing":"1px"},"spacing":{"margin":{"bottom":"12px"}}}} /-->
+
+<!-- wp:woocommerce/breadcrumbs {"style":{"color":{"text":"#ffffff"}}} /--></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"36px","right":"0px","bottom":"50px","left":"0px"}}},"layout":{"inherit":true,"type":"constrained","contentSize":"90%"}} -->
+<main id="content" class="wp-block-group" style="padding-top:36px;padding-right:0;padding-bottom:50px;padding-left:0"><!-- wp:term-description {"align":"wide"} /-->
+
+<!-- wp:woocommerce/store-notices /-->
+
+<!-- wp:group {"className":"alignwide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"},"style":{"spacing":{"margin":{"bottom":"24px"}}}} -->
+<div class="wp-block-group alignwide" style="margin-bottom:24px"><!-- wp:woocommerce/product-results-count /-->
+
+<!-- wp:html -->
+<form class="dresso-native-sort" method="get" style="display:flex;align-items:center;gap:8px"><label for="dresso-orderby">Sort by:</label><select id="dresso-orderby" name="orderby" aria-label="Sort products" onchange="this.form.submit()" style="padding:9px 12px;border:1px solid #0b5d59;border-radius:4px;background:#fff;color:#153b3b"><option value="menu_order">Default sorting</option><option value="popularity">Popularity</option><option value="rating">Average rating</option><option value="date">Newest</option><option value="price">Price: low to high</option><option value="price-desc">Price: high to low</option></select><noscript><button type="submit">Apply</button></noscript></form><script>(function(){var s=document.getElementById('dresso-orderby');if(s){var v=new URLSearchParams(location.search).get('orderby')||'menu_order';if(Array.from(s.options).some(function(o){return o.value===v}))s.value=v;}})();</script>
+<!-- /wp:html --></div>
+<!-- /wp:group -->
+
+<!-- wp:woocommerce/product-collection {"queryId":1,"query":{"woocommerceAttributes":[],"woocommerceStockStatus":["instock","outofstock","onbackorder"],"taxQuery":[],"isProductCollectionBlock":true,"perPage":12,"pages":0,"offset":0,"postType":"product","order":"desc","orderBy":"date","inherit":true,"featured":false,"woocommerceOnSale":false,"woocommerceHandPickedProducts":[],"filterable":false},"tagName":"div","displayLayout":{"type":"flex","columns":4,"shrinkColumns":true},"align":"wide","className":"dresso-category-results dresso-filter-products"} -->
+<div class="wp-block-woocommerce-product-collection alignwide dresso-category-results dresso-filter-products">
+<!-- wp:woocommerce/product-template -->
+<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"1","width":"100%","height":"auto"} /-->
+<!-- wp:post-title {"isLink":true,"textAlign":"center","style":{"typography":{"fontSize":"18px"}}} /-->
+<!-- wp:woocommerce/product-price {"textAlign":"center"} /-->
+<!-- /wp:woocommerce/product-template -->
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:query-pagination-previous /--><!-- wp:query-pagination-numbers /--><!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+<!-- wp:query-no-results --><!-- wp:paragraph --><p>No products in this category.</p><!-- /wp:paragraph --><!-- /wp:query-no-results -->
+</div><!-- /wp:woocommerce/product-collection --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

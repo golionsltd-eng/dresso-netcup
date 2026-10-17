@@ -1,0 +1,26 @@
+/* DRESSO inner-page visual system; homepage and WooCommerce logic untouched */
+body:not(.home){background:#f7f4ed;color:#233c3b}
+body:not(.home) .wp-site-blocks{background:#f7f4ed}
+body:not(.home) #content{max-width:1440px;margin-inline:auto}
+body:not(.home) .woocommerce-breadcrumb,body:not(.home) .woocommerce-breadcrumb a{color:#667b76;text-decoration:none}
+body:not(.home) .woocommerce-breadcrumb a:hover{color:#b88635}
+body:not(.home) .wp-block-query-title,body:not(.home) .single-product-right h1{font-family:Georgia,serif;letter-spacing:.4px}
+body:not(.home) .dresso-category-results .wp-block-post-template{gap:24px}
+body:not(.home) .dresso-category-results .wp-block-post{background:#fff;border:1px solid #e8e0d2;padding:13px 13px 20px;box-shadow:0 5px 20px #073f430a;transition:transform .2s,box-shadow .2s}
+body:not(.home) .dresso-category-results .wp-block-post:hover{transform:translateY(-3px);box-shadow:0 8px 25px #073f431a}
+body:not(.home) .dresso-category-results .wp-block-post-featured-image{margin:0 0 13px}
+body:not(.home) .dresso-category-results .wp-block-post-featured-image img{width:100%;aspect-ratio:1;object-fit:contain;background:#faf9f5}
+body:not(.home) .dresso-category-results .wp-block-post-title{margin:8px 0;line-height:1.4}
+body:not(.home) .dresso-category-results .wp-block-post-title a{color:#073f43;text-decoration:none}
+body:not(.home) .dresso-category-results .wc-block-components-product-price,body:not(.home) .dresso-category-results .woocommerce-Price-amount{color:#a77a28;font-weight:700}
+body:not(.home) .dresso-native-sort{font:14px Arial,sans-serif;color:#073f43}
+body:not(.home) .dresso-native-sort select{border-color:#b88635!important;background:#fff!important;color:#073f43!important}
+body:not(.home) .single-product-left .woocommerce-product-gallery{background:#fff;border:1px solid #e8e0d2;padding:14px}
+body:not(.home) .single-product-right{background:#fff;border:1px solid #e8e0d2;padding:24px!important}
+body:not(.home) .single-product-right h1{color:#073f43!important}
+body:not(.home) .single-product-right .price,body:not(.home) .single-product-right .woocommerce-Price-amount{color:#a77a28!important}
+body:not(.home) .single-product-right .single_add_to_cart_button,body:not(.home) .single-product-right .wp-block-button__link{background:#b88635!important;color:#fff!important;border:1px solid #b88635!important;border-radius:3px!important;padding:13px 24px!important}
+body:not(.home) .single-product-right .single_add_to_cart_button:hover{background:#073f43!important;border-color:#073f43!important}
+body:not(.home) .related-products h2{font-family:Georgia,serif;color:#073f43!important}
+body:not(.home) .wp-block-query-pagination a{color:#073f43}
+@media(max-width:780px){body:not(.home) .dresso-category-results .wp-block-post-template{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px}body:not(.home) .dresso-category-results .wp-block-post{padding:8px}body:not(.home) .single-product-right{padding:16px!important}}

@@ -1,0 +1,31 @@
+.dresso-inner-header{position:relative;z-index:999;background:#073f43;border-bottom:2px solid #b88635;color:#d8a84e;padding:12px clamp(12px,3vw,42px);font-family:Georgia,serif}
+.dresso-inner-row{display:flex;align-items:center;gap:clamp(12px,2vw,28px);max-width:1600px;margin:auto}
+.dresso-inner-logo{width:112px;max-height:66px;object-fit:contain;flex-shrink:0;filter:brightness(1.5) contrast(1.3) drop-shadow(0 0 3px #b88635)}
+.dresso-inner-nav{display:flex;align-items:center;gap:clamp(10px,1.4vw,22px);flex:1;min-width:0}
+.dresso-inner-nav>a,.dresso-inner-nav>details>summary{font:bold clamp(12px,1vw,16px)/1.3 Georgia,serif;letter-spacing:.7px;color:#e1b459!important;text-decoration:none;white-space:nowrap;cursor:pointer;list-style:none}
+.dresso-inner-nav>details>summary::-webkit-details-marker{display:none}
+.dresso-inner-nav>details>summary:after{content:" ▾";font-size:11px}
+.dresso-inner-nav>details{position:relative}
+.dresso-inner-panel{position:absolute;top:100%;left:0;background:#073f43;border:1px solid #b88635;box-shadow:0 10px 24px #0007;width:min(390px,85vw);max-height:70vh;overflow:auto;padding:12px;z-index:9999}
+.dresso-inner-panel a{display:block;color:#e5bf78!important;font:14px/1.45 Arial,sans-serif;text-decoration:none;padding:8px 6px}
+.dresso-inner-panel a:hover,.dresso-inner-nav>a:hover{color:#fff!important}
+.dresso-inner-node{border-top:1px solid #b8863540;margin:0 0 0 9px}
+.dresso-inner-node>summary{color:#e5bf78;cursor:pointer;list-style:disclosure-closed}
+.dresso-inner-node[open]>summary{list-style:disclosure-open}
+.dresso-inner-node>summary>a{display:inline-block}
+.dresso-inner-children{margin-left:12px;border-left:1px solid #b8863580;padding-left:6px}
+.dresso-inner-actions{display:flex;align-items:center;gap:10px;margin-left:auto}
+.dresso-inner-actions a{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border:1px solid #b88635;border-radius:50%;color:#e1b459!important}
+.dresso-inner-actions svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:2}.dresso-inner-search{display:flex;align-items:center;gap:4px;flex-shrink:0;margin:0 6px 0 0;border:1px solid #b88635;border-radius:22px;padding:3px 7px;background:rgba(8,38,43,.75)}.dresso-inner-search input[type=search]{width:clamp(90px,12vw,170px);min-width:0;background:transparent;color:#e5b75c;border:0;outline:0;font:700 14px Georgia,serif}.dresso-inner-search input::placeholder{color:#e5b75c;opacity:1}.dresso-inner-search button{border:0;background:transparent;color:#e5b75c;font-size:24px;cursor:pointer;padding:0 4px}.dresso-inner-search:focus-within{outline:1px solid #e5b75c}@media(max-width:767px){.dresso-inner-search input[type=search]{width:105px;font-size:13px}}
+@media(max-width:850px){.dresso-inner-row{flex-wrap:wrap}.dresso-inner-logo{width:88px}.dresso-inner-nav{order:3;width:100%;flex-basis:100%;overflow-x:auto;padding:9px 0}.dresso-inner-nav>details{position:static}.dresso-inner-panel{left:3%;top:100%;width:90vw}.dresso-inner-actions{margin-left:auto}}
+
+/* DRESSO menu clarity — 2026-10-11 */
+.dresso-top-nav{background:#073b3f!important;border:0!important;box-shadow:none!important}
+.dresso-top-nav>a,.dresso-top-nav>.dresso-nav-group>summary,.dresso-inner-nav>a,.dresso-inner-nav>details>summary{color:#ffe09a!important;font-family:Arial,Helvetica,sans-serif!important;font-size:17px!important;font-weight:700!important;line-height:1.4!important;letter-spacing:.6px!important;text-shadow:none!important;opacity:1!important}
+.dresso-top-nav>a,.dresso-top-nav>.dresso-nav-group>summary{padding:8px 5px!important}
+.dresso-catalog-panel,.dresso-inner-panel{background:#073b3f!important;border-color:#e9bd62!important}
+.dresso-catalog-panel a,.dresso-inner-panel a{color:#ffe6b0!important;font:600 15px/1.5 Arial,Helvetica,sans-serif!important;text-shadow:none!important}
+.dresso-cat-node>summary,.dresso-inner-node>summary{color:#ffe09a!important}
+.dresso-top-nav a:hover,.dresso-top-nav summary:hover,.dresso-inner-nav a:hover,.dresso-inner-nav summary:hover{color:#fff!important;text-shadow:none!important}
+.dresso-top-nav a:focus-visible,.dresso-top-nav summary:focus-visible,.dresso-inner-nav a:focus-visible,.dresso-inner-nav summary:focus-visible{outline:2px solid #ffe09a!important;outline-offset:3px}
+@media(max-width:767px){.dresso-top-nav>a,.dresso-top-nav>.dresso-nav-group>summary,.dresso-inner-nav>a,.dresso-inner-nav>details>summary{font-size:15px!important;letter-spacing:.3px!important}}
